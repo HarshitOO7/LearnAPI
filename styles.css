@@ -11,7 +11,27 @@ body{
     justify-content: center;
     margin: auto;
 }
-
+/* change the href color */
+a:link {
+    color: #FFF;
+}
+/* change the background color of the hovered link */
+a:hover {
+    background-color: #FFF;
+}
+/* change the background color of the selected link */
+a:active {
+    background-color: #FFF;
+}
+/* change the background color of the visited link */
+a:visited {
+    background-color: #FFF;
+}
+.container2 {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
 .local {
     width: 50%;
     border: solid 1px #000;
