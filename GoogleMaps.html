@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map API</title>
+    <script href="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+
+<body>
+    <h1>Google Map API</h1>
+    <div id="overview">
+        <h2>Overview</h2>
+        <p> 
+            The Google Maps API is one of those brilliant Google technologies that allows you to take the power of Google Maps and embed it right on your own website. 
+            It allows you to add relevant material that your visitors will find valuable, as well as modify the appearance and feel of the map to match the design of your site.
+        </p>
+    </div>
+
+    <div id="req">
+        <h2>Requirements</h2>
+        <h3>How to Get Your Google Maps API Key</h3>
+        <p>
+            To get your Google Maps API key, you must first register for a Google Maps API account. 
+            You can do this by going to <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">this link</a>.
+        </p>
+    </div>
+
+    <div id="sample">
+        <h2>Sample Code</h2>
+        <button onclick=initMap()>Click me</button>
+        <div id="map"></div>
+    </div>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
+</body>
+</html>

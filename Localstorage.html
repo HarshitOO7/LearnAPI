@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS file Included -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- JavaScript file included -->
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <h1>Local Storage</h1>
+    <hr>
+    <h2>Overview</h2>
+    <p>With web storage, web applications can store data locally within the user's browser. </p>
+    <p>Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the
+        server. </p>
+    <p>Web storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same
+        data.</p>
+        <div id="container">
+    <div class="local">
+        <h2>Local Storage</h2>
+    
+        The localStorage object stores the data with no expiration date. The data will not be deleted when the browser
+        is closed, and will be available the next day, week, or year.
+        <br><br>
+        <div id="result2">Enter your first name </div>
+        <input type="text" id="firstname"> <br>
+        <div id="result3">Enter your last name </div>
+        <input type="text" id="lastname"> <br>
+        <div id="result4">Enter your age </div>
+        <input type="text" id="age"> <br>
+        <div id="result5">Enter your email </div>
+        <input type="email" id="email"> <br>
+        <p>All of these will be stored and will not be deleted once the browser is closed </p>
+        <button onclick="myfunc()">Submit</button>
+
+        <div class="returns">
+            <div id="ret1"> </div>
+            <div id="ret2"> </div>
+            <div id="ret3"> </div>
+            <div id="ret4"> </div>
+        </div>
+    </div>
+    <div class="session">
+        <h2>Session Storage</h2>
+        The sessionStorage object stores the data with an expiration date. The data will be deleted when the browser is
+        closed.
+        <br><br>
+        <div id="result6">Enter your first name </div>
+        <input type="text" id="firstname2"> <br>
+        <div id="result7">Enter your last name </div>
+        <input type="text" id="lastname2"> <br>
+        <div id="result8">Enter your age </div>
+        <input type="text" id="age2"> <br>
+        <div id="result9">Enter your email </div>
+        <input type="email" id="email2"> <br>
+        <p>All of these will be stored and will be deleted once the browser is closed </p>
+        <button onclick="myfunc2()">Submit</button>
+        <div id="ret5"> </div>
+        <div id="ret6"> </div>
+        <div id="ret7"> </div>
+        <div id="ret8"> </div>
+    </div>
+</div>
+    <br> <br>
+    Saved data will be displayed in the following format: Press print to print the saved data in the local storage
+    <div id="result10"></div>
+    <div id="result11"></div>
+    <div id="result12"></div>
+    <div id="result13"></div>
+    <button onclick="print()">Print</button>
+    <br> <br>
+    Data in the session storage cannot be retrived after the browser is closed. Press print to print the saved data in
+    the session storage
+    <div id="result14"></div>
+    <div id="result15"></div>
+    <div id="result16"></div>
+    <div id="result17"></div>
+    <button onclick="print2()">Print</button>
+
+</body>
+
+</html>

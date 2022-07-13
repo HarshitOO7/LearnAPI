@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Storage API</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="./mian.js"></script>
+</head>
+<body>
+<h1>GeoLocation API</h1>
+
+<div class="overview">
+    <h2> Overview</h2>
+    <p>
+    The Geolocation API is a web API that provides the ability to get the current location of the user. It is used to determine the user's position, or location, on the Earth's surface. If the user desires, the Geolocation API allows them to share their location to web apps. 
+    The user is prompted for permission to report location information for privacy concerns.
+    </p>
+</div>
+
+<div class="req">
+    <h2> Requirements</h2>
+    <p>
+        Before you start developing with the Geolocation API, review the authentication requirements (you need an API key) and the API usage and billing information (you need to enable billing on your project).
+    </p>
+<h3>Geolocation requests</h3>
+<code>Geolocation requests are sent using POST to the following URL:</code>
+
+
+<a>https://www.googleapis.com/geolocation/v1/geolocate?key=YOUR_API_KEY</a><br><br>
+<code>The request body must be a JSON object with the following properties:</code><br>
+You must specify a key in your request, included as the value of a key parameter. A key is your application's API key. This key identifies your application for purposes of quota management. Learn how to <a href="https://developers.google.com/maps/documentation/geolocation/get-api-key" >get a key</a>.
+    </p>
+</div>
+
+<div class="sample">
+    <h2> Sample Run Below</h2>
+    <!-- use main.js to run geolocation -->
+    <button onclick="getLocation()">Get Location</button>
+    <div id="demo"> </div>
+    <div id="map"></div>
+
+
+</body>
+</html>
